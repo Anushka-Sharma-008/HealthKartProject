@@ -9,7 +9,7 @@ import base64
 st.set_page_config(page_title="HealthKart Influencer Dashboard", layout="wide")
 
 # Function to display logo
-def add_logo_header(image_path="healthkart_logo.png", width=120):
+def add_logo_header(image_path="assets/healthkart_logo.png", width=120):
     with open(image_path, "rb") as f:
         data = f.read()
         encoded = base64.b64encode(data).decode()
@@ -71,7 +71,7 @@ page = st.sidebar.radio("Go to", ["Campaign Overview", "Influencer Insights", "P
 
 # --- Page 1: Campaign Overview ---
 if page == "Campaign Overview":
-    add_logo_header("assets\healthkart_logo.png")  # ✅ Shows logo + title header on all pages
+    add_logo_header("assets/healthkart_logo.png")  # ✅ Shows logo + title header on all pages
     st.title("📊 Campaign Overview")
 
     tracking_data['date'] = pd.to_datetime(tracking_data['date'])
@@ -113,7 +113,7 @@ if page == "Campaign Overview":
 
 # --- Page 2: Influencer Insights ---
 elif page == "Influencer Insights":
-    add_logo_header("assets\healthkart_logo.png")  # ✅ Shows logo + title header on all pages
+    add_logo_header("assets/healthkart_logo.png")  # ✅ Shows logo + title header on all pages
     st.title("👥 Influencer Insights")
 
     summary = merged.groupby(['influencer_id', 'name', 'platform', 'category']).agg({
@@ -140,7 +140,7 @@ elif page == "Influencer Insights":
 
 # --- Page 3: Payout Tracker ---
 elif page == "Payout Tracker":
-    add_logo_header("assets\healthkart_logo.png")  # ✅ Shows logo + title header on all pages
+    add_logo_header("assets/healthkart_logo.png")  # ✅ Shows logo + title header on all pages
     st.title("💰 Payout Tracker")
 
     payout_data = influencers.merge(payouts, on='influencer_id', how='left')
@@ -163,7 +163,7 @@ elif page == "Payout Tracker":
 
 # --- Page 4: Forecast ROI ---
 elif page == "Forecast ROI":
-    add_logo_header("assets\healthkart_logo.png")  # ✅ Shows logo + title header on all pages
+    add_logo_header("assets/healthkart_logo.png")  # ✅ Shows logo + title header on all pages
     st.title("🔮 Forecast ROI")
     platform = st.selectbox("Select Platform", platforms[1:])
     followers = st.slider("Follower Count (in thousands)", 1, 1000, 100)
@@ -182,7 +182,7 @@ elif page == "Forecast ROI":
 
 # --- Page 5: Chatbot ---
 elif page == "Chatbot":
-    add_logo_header("assets\healthkart_logo.png")  # ✅ Shows logo + title header on all pages
+    add_logo_header("assets/healthkart_logo.png")  # ✅ Shows logo + title header on all pages
     st.title("🤖 Chatbot")
     from chatbot import chatbot_response
 
