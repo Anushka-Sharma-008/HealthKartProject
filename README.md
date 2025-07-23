@@ -5,7 +5,7 @@ It offers **ROI estimation, performance insights, payout tracking, and chatbot-b
 
 🔗 **Live Dashboard:** [Click here to explore the deployed dashboard](https://healthkartproject.streamlit.app/)  
 
-<img src="./Snapshot of Dashboard _ Default.png">
+<img src="assets/preview_1.png">
 
 ---
 
@@ -52,18 +52,35 @@ Filtering options are available in the sidebar to slice data by platform, catego
 
 ## 📷 Preview
 
-![Default](Snapshot%20of%20Dashboard%20_%20Default.png)
-![Drake](Snapshot%20of%20Dashboard%20_%20Drake.png)
-![Selected Tracks](Snapshot%20of%20Dashboard%20_%20Selected%20Tracks.png)
+![Page1](assets/preview_1.png)
+![Page2](assets/preview_2.png)
+![Page3](assets/preview_3.png)
+![Page4](assets/preview_4.png)
+![Page5](assets/preview_5.png)
 
 ---
 
 ## 📁 Folder Structure
 ```
-MoviesAnalysisSQL/
-├── Project_log.pdf
-├── Questions.md
-└── README.md
+HealthKartProject/
+├── README.md                  # Project overview and usage guide
+├── Project_documentation.pdf            # Full project documentation/report
+├── data/                      # Simulated datasets
+│   ├── data_simulation.py
+│   ├── influencers.csv
+│   ├── posts.csv
+│   ├── payouts.csv
+│   └── tracking_data.csv
+├── app.py                 # Main dashboard script
+├── chatbot.py             # Chatbot logic and data interface
+├── assets/                # Visuals and assets
+│   ├── preview_1.png      # Preview of Page 1   
+│   ├── preview_2.png      # Preview of Page 2   
+│   ├── preview_3.png      # Preview of Page 3   
+│   ├── preview_4.png      # Preview of Page 4   
+│   ├── preview_5.png      # Preview of Page 5   
+│   └── healthkart_logo.png   # Logo of the brand
+└── requirements.txt           # Python dependencies
 ```
 
 ---
@@ -101,8 +118,8 @@ MoviesAnalysisSQL/
 
 ## 📎 Project Documentation
 
-Full project report is available in the attached PDF:  
-📄 [Click here to view the full project log (PDF)](./Project_documentation.pdf)
+Full project documentation is available in the attached PDF:  
+📄 [Click here to view the full project documentation (PDF)](./Project_documentation.pdf)
 
 ---
 
