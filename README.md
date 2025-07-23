@@ -3,6 +3,8 @@
 This Streamlit-based interactive dashboard helps **track and analyze the performance of influencer marketing campaigns** at HealthKart across platforms like Instagram, YouTube, and Twitter.  
 It offers **ROI estimation, performance insights, payout tracking, and chatbot-based queries**—all powered by simulated campaign data.
 
+🔗 **Live Dashboard:** [Click here to explore the deployed dashboard](https://healthkartproject.streamlit.app/)  
+
 <img src="./Snapshot of Dashboard _ Default.png">
 
 ---
