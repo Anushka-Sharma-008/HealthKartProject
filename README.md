@@ -4,6 +4,7 @@ This Streamlit-based interactive dashboard helps **track and analyze the perform
 It offers **ROI estimation, performance insights, payout tracking, and chatbot-based queries**—all powered by simulated campaign data.
 
 🔗 **Live Dashboard:** [Click here to explore the deployed dashboard](https://healthkartproject.streamlit.app/)  
+📄 **Project Documentation:** [Click here to view the full project documentation (PDF)](./Project_documentation.pdf)
 
 <img src="assets/preview_1.png">
 
@@ -113,13 +114,6 @@ HealthKartProject/
    ```bash
    streamlit run app.py
    ```
-
----
-
-## 📎 Project Documentation
-
-Full project documentation is available in the attached PDF:  
-📄 [Click here to view the full project documentation (PDF)](./Project_documentation.pdf)
 
 ---
 
